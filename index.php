@@ -46,10 +46,10 @@
 // echo isset($a,$b,$c);
 
 
-// $con = new mysqli('localhost','root','','connect') or die("Uneble to exsits");
+$con = new mysqli('localhost','root','','connect') or die("Uneble to exsits");
 
-// if($con) {
-//     $products = mysqli_query($con,"SELECT * FROM `users`"); 
-//     $products = mysqli_fetch_all($products);
-//     var_dump($products);    
-// }
+if($con) {
+    $products = mysqli_query($con,"SELECT * FROM `users`"); 
+    $products = mysqli_fetch_all($products);
+    var_dump($products);    
+}
