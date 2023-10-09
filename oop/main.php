@@ -25,15 +25,19 @@ class Person {
     public $surname;
     public $gender;
 
-    public function about($name, $age,$surname,$gender){
+    public function about($name, $age, $surname, $gender){
         $this->name = $name;
         $this->age = $age;
         $this->surname = $surname;
         $this->gender = $gender;
     }
+
+    public function displayInfo()
+    {
+        echo "Name: $this->name; Age: $this->age<br>";
+    }
 }
 
 $tom = new Person();
-$tom->about("Mike", 16,"White","male");
-
-echo $tom->name."-". $tom->age."-". $tom->surname."-". $tom->gender; 
+$tom->about("Mike", 15, "Smith", "Male");
+$tom->displayInfo();
