@@ -19,18 +19,21 @@
 // echo $person1->name. " - " . $person->age ;
 
 
-// homework 1 
 class Person {
     public $name;
     public $age;
+    public $surname;
+    public $gender;
 
-    public function func($name, $age){
+    public function about($name, $age,$surname,$gender){
         $this->name = $name;
         $this->age = $age;
+        $this->surname = $surname;
+        $this->gender = $gender;
     }
 }
 
-$armine = new Person();
-$armine->func("Narek", 16);
+$tom = new Person();
+$tom->about("Mike", 16,"White","male");
 
-echo $armine->name; 
+echo $tom->name."-". $tom->age."-". $tom->surname."-". $tom->gender; 
