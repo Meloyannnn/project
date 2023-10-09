@@ -20,3 +20,17 @@
 
 
 // homework 1 
+class Person {
+    public $name;
+    public $age;
+
+    public function func($name, $age){
+        $this->name = $name;
+        $this->age = $age;
+    }
+}
+
+$armine = new Person();
+$armine->func("Narek", 16);
+
+echo $armine->name; 
